@@ -24,5 +24,14 @@ public class MahasiswaMain05 {
 
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
+
+        Mahasiswa05 mhsRanti = new Mahasiswa05(
+            "Aliyah Miranti Daleya",
+            "254107060060",
+            4.00,
+            "SIB 1E"
+        );
+
+        mhsRanti.tampilkanInformasi();
     }
 }
