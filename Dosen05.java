@@ -1,0 +1,47 @@
+public class Dosen05 {
+    
+    String idDosen;
+    String nama;
+    boolean statusAktif;
+    int tahunBergabung;
+    String bidangKeahlian;
+
+    public Dosen05() {
+
+    }
+
+    public Dosen05(String idDosen, String nama, boolean statusAktif, int tahunBergabung, String bidangKeahlian) {
+        this.idDosen = idDosen;
+        this.nama = nama;
+        this.statusAktif = statusAktif;
+        this.tahunBergabung = tahunBergabung;
+        this.bidangKeahlian = bidangKeahlian;
+    }
+
+    void tampilInformasi() {
+        System.out.println("ID Dosen        : " + idDosen);
+        System.out.println("Nama            : " + nama);
+        System.out.println("Status Aktif    : " + (statusAktif? "Aktif" : "Tidak Aktif"));
+        System.out.println("Tahun Bergabung : " + tahunBergabung);
+        System.out.println("Bidang Keahlian : " + bidangKeahlian);
+        System.out.println();
+    }
+
+    void setStatusAktif(boolean status) {
+        statusAktif = status;
+        if (statusAktif) {
+            System.out.println("Dosen sekarang berstatus Aktif.");
+        } else {
+            System.out.println("Dosen sekarang berstatus Tidak Aktif.");
+        }
+    }
+
+    int hitungMasaKerja(int thnSkrg) {
+        return thnSkrg - tahunBergabung;
+    }
+
+    void ubahKeahlian(String bidang) {
+        bidangKeahlian = bidang;
+        System.out.println("Bidang keahlian berhasil diubah menjadi: " + bidangKeahlian);
+    }
+}

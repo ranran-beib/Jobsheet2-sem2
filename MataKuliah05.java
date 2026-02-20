@@ -18,9 +18,9 @@ public class MataKuliah05 {
 
     void tampilInformasi() {
         System.out.println("Kode MK     : " + kodeMK);
-        System.out.println("Nama MK     : " + kodeMK);
-        System.out.println("SKS         : " + kodeMK);
-        System.out.println("Jumlah Jam  : " + kodeMK);
+        System.out.println("Nama MK     : " + nama);
+        System.out.println("SKS         : " + sks);
+        System.out.println("Jumlah Jam  : " + jumJam);
         System.out.println();
     }
 
